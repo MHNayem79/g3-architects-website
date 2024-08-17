@@ -138,11 +138,60 @@ main > section{
     filter: grayscale(100%);
 }
 
+/* feature realeted style */
+.features{
+    gap: 140px;
+}
+#feature-section-title{
+    border-left: 5px solid #FF900E;
+    padding-left: 21px;
+}
+.feature-title{
+    font-weight: 600;
+    font-size: 1.24rem;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.feature-card{
+    width: 580px;
+    padding: 30px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.06);
+    border-radius: 8px;
+}
+.years{
+    font-size: 4rem;
+    font-weight: bold;
+}
+.experiance{
+    font-size: 1.55rem;
+    font-weight: 500;
+}
+.xp-container{
+    padding: 43px;
+    width: 342px;
+    margin-left: -100px;
+    margin-top: -100px;
+}
+/* footer styles */
+.footer{
+    width: 1440px;
+    background-color: rgba(255, 144, 14, 0.1);
+    justify-items: center;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 150px;
+}
+
+
 /* responsive styles */
 @media screen and (max-width : 576px) {
-    .navbar ,
-    .nav-links ,
-    .teams
+    .navbar,
+    .nav-links,
+    .teams,
+    .features
     {
         flex-direction: column;
     }
@@ -165,12 +214,27 @@ main > section{
         grid-template-columns: repeat(1, 1fr);
         justify-items: center;
         gap: 50px;
-}
+    }
+    .feature-image{
+        width: 100%;
+    }
+    .feature-card{
+        width: 100%;
+    }
+    .xp-container{
+        margin-top: 20px;
+        margin-left: 20px;
+    }
 }
 /* responsive for medium devices */
 @media screen and (min-width:576px) and (max-width:990px) {
-    .teams{
+    .teams,
+    .features{
         flex-direction: column;
+    }
+    .xp-container {
+        margin-left: 20px;
+        margin-top: 20px;
     }
     .fact-container {
         grid-template-columns: repeat(2 ,1fr);
@@ -179,4 +243,8 @@ main > section{
     .companies {
         grid-template-columns: repeat(3, 1fr);
         gap: 50px;
+}
+    .section-peragraph{
+        width: 100%;
+    }
 }
