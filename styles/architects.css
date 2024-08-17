@@ -225,6 +225,8 @@ main > section{
         margin-top: 20px;
         margin-left: 20px;
     }
+    .footer {
+        width: 100%;}
 }
 /* responsive for medium devices */
 @media screen and (min-width:576px) and (max-width:990px) {
@@ -247,4 +249,6 @@ main > section{
     .section-peragraph{
         width: 100%;
     }
+    .footer {
+        width: 100%;}
 }
